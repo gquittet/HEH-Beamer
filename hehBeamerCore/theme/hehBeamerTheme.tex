@@ -1,0 +1,85 @@
+%!TEX root = ../../presentation.tex
+
+
+% Configuration du theme
+
+
+% Configuration du Beamer
+\renewcommand{\footnoterule}{%
+	\hrule width 0.7\linewidth height 0.4pt
+	\kern 2pt
+}
+
+\setbeamertemplate{navigation symbols}{}
+\usefonttheme{professionalfonts}
+\setmainfont{HelveticaNeue-Condensed}[
+	Path = hehBeamerCore/fonts/,
+	BoldFont = *Bold,
+	ItalicFont = *Obl,
+	BoldItalicFont = *BoldObl]
+\usecolortheme{beaver}
+\useinnertheme[shadow=true]{rounded}
+\useoutertheme{infolines}
+
+
+% Customize beamer color
+
+
+% Structure of presentation
+% Color palettes
+\setbeamercolor{palette primary}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehRouge}
+% Title page color
+\setbeamercolor{title}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{institute}{fg=black}
+\setbeamercolor{author}{fg=hehGris}
+\setbeamercolor{date}{fg=hehGrisClair}
+% Global definition
+\setbeamercolor{normal text}{fg=hehGris}
+% Toc color
+\setbeamercolor{section in toc}{fg=hehGris}
+\setbeamercolor{subsection in toc}{fg=hehGris}
+\setbeamercolor{subsubsection in toc}{fg=hehGris}
+\setbeamercolor{section number projected}{fg=hehWhite, bg=hehRouge}
+% Note page
+\setbeamercolor{note page}{fg=hehNoir, bg=hehWhite}
+
+
+% Structure of a frame
+% Headline and footline
+\setbeamercolor{separation line}{bg=hehWhite}
+\setbeamercolor{middle separation line head}{bg=hehWhite}
+\setbeamercolor{middle separation line foot}{bg=hehWhite}
+
+
+% Element of a frame
+% Frame title
+\setbeamercolor{frametitle}{fg=hehWhite, bg=hehGris}
+\setbeamercolor{frametitle right}{fg=hehWhite, bg=hehGris}
+\setbeamercolor{framesubtitle}{fg=hehWhite, bg=hehGris}
+\setbeamercolor{frametitle continuation}{fg=hehWhite, bg=hehGris}
+\setbeamercolor{titlelike}{fg=hehWhite, bg=hehGris}
+% List item color
+\setbeamercolor{item projected}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{enumerate item}{fg=hehRouge}
+\setbeamercolor{enumerate subitem}{fg=hehRouge}
+\setbeamercolor{enumerate subsubitem}{fg=hehRouge}
+\setbeamercolor{description item}{fg=hehRouge}
+%Block
+\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehRouge}
+\setbeamercolor{block body alerted}{fg=hehGris, bg=grisClair}
+\setbeamercolor{block title example}{fg=hehWhite, bg=hehGris}
+\setbeamercolor{block body example}{fg=hehGris, bg=grisClair}
+\setbeamercolor{block title}{fg=hehWhite, bg=hehOrange}
+\setbeamercolor{block body}{fg=hehGris, bg=grisClair}
+
+
+% Heh logo sur chaque frame
+\addtobeamertemplate{frametitle}{}{
+	\vspace*{-1.22cm}
+	\makebox[\linewidth][r]{\href{https://ecampus.heh.be/}{\XeTeXLinkBox{\includegraphics[width=0.09\linewidth]{hehBeamerCore/logo/logo-heh.jpg}}}}
+	\vspace*{-0.55cm}
+}

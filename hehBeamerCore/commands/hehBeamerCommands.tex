@@ -1,0 +1,101 @@
+%!TEX root = ../../presentation.tex
+
+
+\newcommand{\annee}[1]{
+	\def\varAnnee{#1}
+}
+
+
+\newcommand{\configure}[2]{
+	\def#1{#2}
+}
+
+
+\newcommand{\email}[1]{
+	\def\varEmail{#1}
+}
+
+
+\newcommand{\hehBeamerInfo}{
+	\partie{}
+	\begin{frame}{\space}
+		\begin{center}
+			Cette présentation a été réalisée avec le Framework HEH Beamer\\
+			HEH Beamer \hehBeamerVersion\\
+			\small
+			\url{\hehBeamerURL}
+			\normalsize
+		\end{center}
+	\end{frame}
+}
+
+
+\newcommand{\interligne}[1]{
+	\def\varInterligne{#1}
+}
+
+
+\newcommand{\nom}[1]{
+	\def\varNom{#1}
+}
+
+
+\newcommand{\nouveauxSlides}[1]{
+	\include{slides/#1}
+}
+
+
+\newcommand{\pageDeTitre}{
+	\begin{frame}
+		\titlepage
+	\end{frame}
+}
+
+
+\newcommand{\partie}[1]{
+	\def\laPartieCourante{#1}
+	\section{#1}
+}
+
+
+\newcommand{\pdfEtNotes}{
+    \setbeameroption{show notes on second screen=right}
+}
+
+
+\newcommand{\prenom}[1]{
+	\def\varPrenom{#1}
+}
+
+
+\newcommand{\sousPartie}[1]{
+	\def\laSousPartieCourante{#1}
+	\subsection{#1}
+}
+
+
+\newcommand{\sousSousPartie}[1]{
+	\def\laSousSousPartieCourante{#1}
+	\subsubsection{#1}
+}
+
+
+\newcommand{\tableDesMatieres}{
+	\begin{frame}{Table des matières}
+		\tableofcontents[currentsection,
+						currentsubsection,
+						hideothersubsections,
+						sectionstyle=show/hide,
+						subsectionstyle=show/shaded/hide]
+	\end{frame}
+}
+
+
+\newcommand{\titre}[1]{
+	\def\varTitre{#1}
+}
+
+
+\newcommand{\titreAbrege}[1]{
+	\def\varTitreAbrege{#1}
+}
