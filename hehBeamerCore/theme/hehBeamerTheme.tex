@@ -6,17 +6,17 @@
 
 % Configuration du Beamer
 \renewcommand{\footnoterule}{%
-	\hrule width 0.7\linewidth height 0.4pt
-	\kern 2pt
+    \hrule width 0.7\linewidth{} height 0.4pt
+    \kern{} 2pt
 }
 
 \setbeamertemplate{navigation symbols}{}
 \usefonttheme{professionalfonts}
 \setmainfont{HelveticaNeue-Condensed}[
-	Path = hehBeamerCore/fonts/,
-	BoldFont = *Bold,
-	ItalicFont = *Obl,
-	BoldItalicFont = *BoldObl]
+Path = hehBeamerCore/fonts/,
+BoldFont = *Bold,
+ItalicFont = *Obl,
+BoldItalicFont = *BoldObl]
 \usecolortheme{beaver}
 \useinnertheme[shadow=true]{rounded}
 \useoutertheme{infolines}
@@ -79,7 +79,7 @@
 
 % Heh logo sur chaque frame
 \addtobeamertemplate{frametitle}{}{
-	\vspace*{-1.22cm}
-	\makebox[\linewidth][r]{\href{https://ecampus.heh.be/}{\XeTeXLinkBox{\includegraphics[width=0.09\linewidth]{hehBeamerCore/logo/logo-heh.jpg}}}}
-	\vspace*{-0.55cm}
+    \vspace*{-1.22cm}
+    \makebox[\linewidth][r]{\href{https://ecampus.heh.be/}{\XeTeXLinkBox{\includegraphics[width=0.09\linewidth]{hehBeamerCore/logo/logo-heh.jpg}}}}
+    \vspace*{-0.55cm}
 }
