@@ -17,7 +17,6 @@
 
 
 \newcommand{\hehBeamerInfo}{
-    \partie{}
     \begin{frame}{\space}
         \begin{center}
             Cette présentation a été réalisée avec le Framework HEH Beamer\\
@@ -40,11 +39,6 @@
 }
 
 
-\newcommand{\nouveauxSlides}[1]{
-    \include{slides/#1}
-}
-
-
 \newcommand{\pageDeTitre}{
     \begin{frame}
         \titlepage{}
@@ -52,9 +46,10 @@
 }
 
 
-\newcommand{\partie}[1]{
+\newcommand{\partie}[3]{
     \def\laPartieCourante{#1}
     \section{#1}
+    \input{slides/#2}
 }
 
 
