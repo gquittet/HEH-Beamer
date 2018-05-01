@@ -3,7 +3,6 @@
 
 % Configuration du theme
 
-
 % Configuration du Beamer
 \renewcommand{\footnoterule}{%
     \hrule width 0.7\textwidth height 0.4pt
@@ -26,12 +25,7 @@ BoldItalicFont = *BoldObl]
 
 
 % Structure of presentation
-% Color palettes
-\setbeamercolor{palette primary}{fg=hehWhite, bg=hehRouge}
-\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehRouge}
-\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehRouge}
 % Title page color
-\setbeamercolor{title}{fg=hehWhite, bg=hehRouge}
 \setbeamercolor{institute}{fg=black}
 \setbeamercolor{author}{fg=hehGris}
 \setbeamercolor{date}{fg=hehGrisClair}
@@ -41,7 +35,6 @@ BoldItalicFont = *BoldObl]
 \setbeamercolor{section in toc}{fg=hehGris}
 \setbeamercolor{subsection in toc}{fg=hehGris}
 \setbeamercolor{subsubsection in toc}{fg=hehGris}
-\setbeamercolor{section number projected}{fg=hehWhite, bg=hehRouge}
 % Note page
 \setbeamercolor{note page}{fg=hehNoir, bg=hehWhite}
 
@@ -60,16 +53,7 @@ BoldItalicFont = *BoldObl]
 \setbeamercolor{framesubtitle}{fg=hehWhite, bg=hehGris}
 \setbeamercolor{frametitle continuation}{fg=hehWhite, bg=hehGris}
 \setbeamercolor{titlelike}{fg=hehWhite, bg=hehGris}
-% List item color
-\setbeamercolor{item projected}{fg=hehWhite, bg=hehRouge}
-\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehRouge}
-\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehRouge}
-\setbeamercolor{enumerate item}{fg=hehRouge}
-\setbeamercolor{enumerate subitem}{fg=hehRouge}
-\setbeamercolor{enumerate subsubitem}{fg=hehRouge}
-\setbeamercolor{description item}{fg=hehRouge}
-%Block
-\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehRouge}
+% Block
 \setbeamercolor{block body alerted}{fg=hehGris, bg=grisClair}
 \setbeamercolor{block title example}{fg=hehWhite, bg=hehGris}
 \setbeamercolor{block body example}{fg=hehGris, bg=grisClair}
@@ -80,6 +64,127 @@ BoldItalicFont = *BoldObl]
 % Heh logo sur chaque frame
 \addtobeamertemplate{frametitle}{}{
     \vspace*{-1.22cm}
-    \makebox[\linewidth][r]{\href{https://ecampus.heh.be/}{\XeTeXLinkBox{\includegraphics[width=0.09\linewidth]{hehBeamerCore/logo/logo-heh.jpg}}}}
+    \makebox[\linewidth][r]{\href{https://ecampus.heh.be/}{\XeTeXLinkBox{\includegraphics[width=0.09\linewidth]{hehBeamerCore/logos/heh.pdf}}}}
     \vspace*{-0.55cm}
+}
+
+\newcommand{\campus}[1]{
+	\IfEqCase{#1}{
+		{économique} {
+			% Structure of presentation
+			% Title page color
+			\setbeamercolor{title}{fg=hehWhite, bg=hehJaune}
+			
+			% Structure of presentation
+			% Color palettes
+			\setbeamercolor{palette primary}{fg=hehWhite, bg=hehJaune}
+			\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehJaune}
+			\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehJaune}
+			% Toc color
+			\setbeamercolor{section number projected}{fg=hehWhite, bg=hehJaune}
+			
+			% Element of a frame
+			% List item color
+			\setbeamercolor{item projected}{fg=hehWhite, bg=hehJaune}
+			\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehJaune}
+			\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehJaune}
+			\setbeamercolor{enumerate item}{fg=hehJaune}
+			\setbeamercolor{enumerate subitem}{fg=hehJaune}
+			\setbeamercolor{enumerate subsubitem}{fg=hehJaune}
+			\setbeamercolor{description item}{fg=hehJaune}
+			% Block
+			\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehJaune}
+			
+			% Données campus
+			\configure{\campus}{Économique}
+			\configure{\logoCampus}{hehBeamerCore/logos/campus-économique.pdf}
+		}
+		{pédagogique} {
+			% Structure of presentation
+			% Title page color
+			\setbeamercolor{title}{fg=hehWhite, bg=hehMauve}
+			
+			% Structure of presentation
+			% Color palettes
+			\setbeamercolor{palette primary}{fg=hehWhite, bg=hehMauve}
+			\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehMauve}
+			\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehMauve}
+			% Toc color
+			\setbeamercolor{section number projected}{fg=hehWhite, bg=hehMauve}
+			
+			% Element of a frame
+			% List item color
+			\setbeamercolor{item projected}{fg=hehWhite, bg=hehMauve}
+			\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehMauve}
+			\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehMauve}
+			\setbeamercolor{enumerate item}{fg=hehMauve}
+			\setbeamercolor{enumerate subitem}{fg=hehMauve}
+			\setbeamercolor{enumerate subsubitem}{fg=hehMauve}
+			\setbeamercolor{description item}{fg=hehMauve}
+			% Block
+			\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehMauve}
+			% Données campus
+			\configure{\campus}{Pédagogique}
+			\configure{\logoCampus}{hehBeamerCore/logos/campus-pédagogique.pdf}
+		}
+		{social} {
+			% Structure of presentation
+			% Title page color
+			\setbeamercolor{title}{fg=hehWhite, bg=hehOrange}
+			
+			% Structure of presentation
+			% Color palettes
+			\setbeamercolor{palette primary}{fg=hehWhite, bg=hehOrange}
+			\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehOrange}
+			\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehOrange}
+			% Toc color
+			\setbeamercolor{section number projected}{fg=hehWhite, bg=hehOrange}
+			
+			% Element of a frame
+			% List item color
+			\setbeamercolor{item projected}{fg=hehWhite, bg=hehOrange}
+			\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehOrange}
+			\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehOrange}
+			\setbeamercolor{enumerate item}{fg=hehOrange}
+			\setbeamercolor{enumerate subitem}{fg=hehOrange}
+			\setbeamercolor{enumerate subsubitem}{fg=hehOrange}
+			\setbeamercolor{description item}{fg=hehOrange}
+			% Block
+			\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehOrange}
+			
+			% Données campus
+			\configure{\campus}{Social}
+			\configure{\logoCampus}{hehBeamerCore/logos/campus-social.pdf}
+		}
+		{technique}{
+			% Structure of presentation
+			% Title page color
+			\setbeamercolor{title}{fg=hehWhite, bg=hehRouge}
+			
+			% Structure of presentation
+			% Color palettes
+			\setbeamercolor{palette primary}{fg=hehWhite, bg=hehRouge}
+			\setbeamercolor{palette secondary}{fg=hehWhite, bg=hehRouge}
+			\setbeamercolor{palette tertiary}{fg=hehWhite, bg=hehRouge}
+			% Toc color
+			\setbeamercolor{section number projected}{fg=hehWhite, bg=hehRouge}
+			
+			% Element of a frame
+			% List item color
+			\setbeamercolor{item projected}{fg=hehWhite, bg=hehRouge}
+			\setbeamercolor{subitem projected}{fg=hehWhite, bg=hehRouge}
+			\setbeamercolor{subsubitem projected}{fg=hehWhite, bg=hehRouge}
+			\setbeamercolor{enumerate item}{fg=hehRouge}
+			\setbeamercolor{enumerate subitem}{fg=hehRouge}
+			\setbeamercolor{enumerate subsubitem}{fg=hehRouge}
+			\setbeamercolor{description item}{fg=hehRouge}
+			% Block
+			\setbeamercolor{block title alerted}{fg=hehWhite, bg=hehRouge}
+			
+			% Données campus
+			\configure{\campus}{Technique}
+			\configure{\logoCampus}{hehBeamerCore/logos/campus-technique.pdf}
+			
+		}[\PackageError{campus}{Le campus choisi est inconnu : #1}{}]%
+	}
 }
