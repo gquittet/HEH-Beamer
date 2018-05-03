@@ -17,7 +17,7 @@
 
 
 \newcommand{\hehBeamerInfo}{
-    \begin{frame}{\space}
+    \begin{slide}
         \begin{center}
             Cette présentation a été réalisée avec le Framework HEH Beamer\\
             HEH Beamer \hehBeamerVersion\\
@@ -25,7 +25,7 @@
             \url{\hehBeamerURL}
             \normalsize
         \end{center}
-    \end{frame}
+    \end{slide}
 }
 
 
@@ -46,7 +46,7 @@
 }
 
 
-\newcommand{\partie}[3]{
+\newcommand{\partie}[2]{
     \def\laPartieCourante{#1}
     \section{#1}
     \input{slides/#2}
@@ -54,7 +54,20 @@
 
 
 \newcommand{\pdfEtNotes}{
-    \setbeameroption{show notes on second screen=right}
+	\usepackage{pgfpages}
+	\setbeameroption{show notes on second screen}
+}
+
+
+\newcommand{\pdfEtNotesADroite}{
+	\pdfEtNotes
+	\setbeameroption{show notes on second screen=right}
+}
+
+
+\newcommand{\pdfEtNotesAGauche}{
+	\pdfEtNotes
+	\setbeameroption{show notes on second screen=left}
 }
 
 
@@ -76,13 +89,13 @@
 
 
 \newcommand{\tableDesMatieres}{
-    \begin{frame}{Table des matières}
+    \begin{slide}[Table des matières]
         \tableofcontents[currentsection,
         currentsubsection,
         hideothersubsections,
         sectionstyle=show/hide,
         subsectionstyle=show/shaded/hide]
-    \end{frame}
+    \end{slide}
 }
 
 

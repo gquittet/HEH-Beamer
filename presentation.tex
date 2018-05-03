@@ -1,3 +1,4 @@
+\def\pgfsysdriver{pgfsys-dvipdfm.def}
 \documentclass[serif]{beamer}
 
 % Charge les paquets
@@ -10,6 +11,8 @@
 \input{hehBeamerCore/definitions/hehBeamerDefinitions}
 % Charge le thème de la HEH
 \input{hehBeamerCore/theme/hehBeamerTheme}
+% Charge les environnements personnalisés
+\input{hehBeamerCore/environments/hehBeamerEnvironments}
 % Charge les commandes personnalisées
 \input{hehBeamerCore/commands/hehBeamerCommands}
 
@@ -41,13 +44,22 @@
 \titreAbrege{Titre abrégé}
 
 % L'année scolaire (exemple: 2017 -- 2018). Le double tiret est important.
-\annee{20XX--20XX}
+\annee{2017--2018}
 
 % L'interligne souhaité (par défaut 1.5)
 \interligne{1.5}
 
 % Taille image de la page de garde
-\configure{\tailleLogoCampus}{0.35}
+\configure{\tailleLogoCampus}{0.45}
+
+% Notes
+% Notes par défaut
+%\pdfEtNotes
+% Notes à droite
+%\pdfEtNotesADroite
+% Notes à gauche
+%\pdfEtNotesAGauche
+
 
 
 
@@ -58,10 +70,13 @@
 \input{hehBeamerCore/configuration/hehBeamerDocumentConfiguration}
 
 
+
+
+
 \begin{document}
 \pageDeTitre{}
 
 
-\hehBeamerInfo{}
 
+\hehBeamerInfo{}
 \end{document}

@@ -14,11 +14,11 @@ Pour ce faire, installez TexStudio via le guide (voir fin de ce document), ouvre
 
 ## Version
 
-1.0.0-3
+1.1.2
 
 ## Téléchargement
 
-Cliquez sur ce lien pour télécharger le framework HEH-Beamer : [https://github.com/gquittet/HEH-Beamer/archive/1.0.0-3.zip](https://github.com/gquittet/HEH-Beamer/archive/1.0.0-3.zip)
+Cliquez sur ce lien pour télécharger le framework HEH-Beamer : [https://github.com/gquittet/HEH-Beamer/archive/1.1.2.zip](https://github.com/gquittet/HEH-Beamer/archive/1.1.2.zip)
 
 ## Installer LaTeX
 
