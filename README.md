@@ -1,4 +1,7 @@
 # HEH Beamer
+
+![Version](https://img.shields.io/badge/version-1.1.2-blue.svg)
+
 Framework de la HEH pour faire vos présentations avec Beamer plus facilement.
 
 Pour le compiler et faire du LaTeX, je conseille **TeXStudio**.
@@ -12,9 +15,7 @@ Pour ce faire, installez TexStudio via le guide (voir fin de ce document), ouvre
 4. Cliquez à droite sur "Compilation par défaut".
 5. Changez "PDFLaTeX" par "XeLaTeX".
 
-## Version
 
-1.1.2
 
 ## Téléchargement
 
