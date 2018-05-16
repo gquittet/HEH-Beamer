@@ -4,6 +4,10 @@
 
 Framework de la HEH pour faire vos présentations avec Beamer plus facilement.
 
+<p align="center">
+	<img src="preview.png" alt="Beamer (Preview)" width="320">
+</p>
+
 Pour le compiler et faire du LaTeX, je conseille **TeXStudio**.
 Il faut utiliser le compilateur **XeLaTeX**.
 
