@@ -1,6 +1,6 @@
 # HEH Beamer
 
-![Version](https://img.shields.io/badge/version-1.1.2-blue.svg)
+![Version](https://img.shields.io/badge/version-1.1.3-blue.svg)
 
 Framework de la HEH pour faire vos présentations avec Beamer plus facilement.
 
