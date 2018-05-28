@@ -21,7 +21,7 @@ Pour ce faire, installez `TexStudio` via le guide (voir fin de ce document), ouv
 
 ## Téléchargement
 
-Cliquez sur ce lien pour télécharger le framework HEH-Beamer : [https://github.com/gquittet/HEH-Beamer/archive/1.1.2.zip](https://github.com/gquittet/HEH-Beamer/archive/1.1.2.zip)
+Cliquez sur ce lien pour télécharger le framework HEH-Beamer : [https://github.com/gquittet/HEH-Beamer/archive/1.1.3.zip](https://github.com/gquittet/HEH-Beamer/archive/1.1.3.zip)
 
 ## Installer LaTeX
 
